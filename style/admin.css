@@ -1,0 +1,180 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 100vh;
+
+	background: black;
+}
+
+body .create_product_form {
+	width: 400px;
+	padding: 40px;
+
+	text-align: center;
+}
+
+body .create_product_form p {
+	position: relative;
+}
+
+body .create_product_form input[type=submit] {
+	cursor: pointer;
+
+	border-radius: 0;
+
+	text-decoration: none;
+
+	padding: 12px 18px;
+	font-size: 12px;
+	line-height: 19px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+
+	letter-spacing: 3px;
+	transition: all .4s ease-in-out;
+}
+
+body .create_product_form input[type=submit]:hover {
+	color: #fff;
+	background: #000;
+}	
+
+body .create_product_form p input[type=text], body .create_product_form p input[type=password] {
+	background: black;
+	color: white;
+	padding: 20px 0;
+
+	border: none;
+	width: 100%;
+	outline: none;
+	border-bottom: 2px solid white;
+
+	transition: 0.5s;
+}
+
+body .create_product_form p input:focus ~ label, 
+body .create_product_form p select:focus ~ label, 
+body .create_product_form p textarea:focus ~ label {
+	top: -20px;
+	left: 0;
+
+	color: #03e9f4;
+
+	font-size: 12px;
+}
+
+body .create_product_form p label {
+	position: absolute;
+	top:0;
+	left: 0;
+
+	padding: 10px 0;
+	font-size: 16px;
+
+	color: #fff;
+
+	pointer-events: none;
+
+	transition: .5s;
+}
+
+body .create_product_form p select {
+	background: black;
+	color: white;
+	padding: 20px 0;
+	width: 100%;
+	border: none;
+	outline: none;
+
+	border-bottom: 2px solid white;
+
+	transition: 0.5s;
+}
+
+body .create_product_form p textarea {
+	background: black;
+	color: white;
+	padding: 20px 0;
+	width: 100%;
+
+	border: none;
+	outline: none;
+
+	border-bottom: 2px solid white;
+}
+
+
+
+
+
+body .admin_email_sidebar {
+	position: fixed;
+	right: -325px;
+	top: 0;
+
+	padding: 0;
+
+	width: 400px;
+	height: calc(90% - 50px);
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	transition: all 0.5s ease;
+}
+
+body .active_email {
+	position: fixed;
+	right: 0!important;
+	top: 0;
+}
+
+body .admin_email_sidebar .email_trigger {
+	width: 50px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+body .admin_email_sidebar .email_trigger a svg {
+	fill: white;
+	height: 50px;
+	width: 50px;
+}
+
+body .admin_email_sidebar .content {
+	width: 300px;
+	padding: 0 25px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+body .admin_email_sidebar .content .email_card {
+	width: 100%;
+	margin: 25px 0;
+}
+
+body .admin_email_sidebar .content .email_card .email_header {
+	color: white;
+	background: grey;
+
+	padding: 2px 25px;
+}
+
+body .admin_email_sidebar .content .email_card .email_body {
+	color: white;
+	background: darkgrey;
+	margin-top: 0;
+	padding: 10px 25px;
+}

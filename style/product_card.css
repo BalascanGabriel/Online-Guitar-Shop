@@ -1,0 +1,136 @@
+body {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+
+	background: black;
+}
+
+body .wrapper {
+	width: 100%;
+
+	color: white;
+	background: linear-gradient(45deg, #ffbc00, #ff0058);
+	margin-top: 50px;
+
+}
+
+body .wrapper h1 {
+	text-align: center;
+	width: 100%;
+
+	font-size: 2.5em;
+
+	letter-spacing: 15px;
+}
+
+body .container {
+
+	overflow: hidden;
+
+	min-width: 60vw;
+	max-width: 80vw;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.container .product-container {
+	width: 100%;
+
+	display: flex;
+	flex-wrap: wrap;
+	padding: 40px 0;
+}
+
+.product-container .card {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	color: white;
+
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+
+	margin: 20px 30px;
+	transition: 0.5s;
+}
+
+.product-container .card:hover {
+}
+
+.product-container .card::before {
+}
+
+.product-container .card span {
+}
+
+.product-container .card .content {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.product-container .card .content .image-content .card-image {
+	width: 200px;
+	height: 400px;
+}
+
+.product-container .card .content .text-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 0 15px;
+	height: 100%;
+	width: 50%;
+}
+
+.product-container .card .content .text-content h4 {
+	width: 100%;
+	font-size: 20px;
+	text-align: left;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.product-container .card .content .text-content .card-price {
+	width: 100%;
+	margin-top: 0;
+	text-align: left;
+}
+
+.product-container .card .content .text-content .card-description {
+	width: 100%;
+	text-align: left;
+}
+
+.product-container .card .content .text-content input[type=submit] {
+	padding: 10px 15px;
+	border: 1px solid gold;
+	background: #000;
+	color: gold;
+
+	position: absolute;
+	bottom: 15px;
+
+	transition: all 0.5s ease;
+}
+
+.product-container .card .content .text-content input[type=submit]:hover {
+	transform: scale(1.2);
+	background: linear-gradient(45deg, gold, white);
+	color: black;
+}
+
+
+
+
+
